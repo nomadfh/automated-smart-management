@@ -8,7 +8,7 @@ tower_inventories:
     variables:
       ansible_user: centos
       instances:
-        tags:
+        tags: customupdate
           ContentView: CentOS7
           Environment: Dev
           guid: "{{ lookup('env', 'AWX_HOST' ).split('.')[1] }}"
